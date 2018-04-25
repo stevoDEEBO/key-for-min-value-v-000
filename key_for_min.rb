@@ -3,8 +3,8 @@
 
 def key_for_min_value(name_hash)
   array = []
-  hash.collect do |name, value|
+  name_hash.collect do |name, value|
     array << value
   end
-  hash.invert[array.min]
+  name_hash.invert[array.min]
 end
